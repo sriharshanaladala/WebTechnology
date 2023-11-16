@@ -6,13 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+   <div style="border: 2px solid;">
+    <span align="center" > <h1><u>BIODATA FORM</u> </h1></span>
+    <form action="" align="center">
         <label for="">FirstName:</label>
         <input type="text" name="FNAME">
         <br><br>
         <label for="">LastName:</label>
         <input type="text" name="LNAME">
         <br><br>
+        <p>Gender</p>
+        <input type="radio" name="Gender" value="male">
+        <label for="">Male</label>
+        <input type="radio" name="Gender" value="female">
+        <label for="">Female</label>
+        <p>Language:</p>
+        <input type="checkbox" name="lang" value="Telugu" id="l">
+        <label for="l">Telugu</label><br>
+        <input type="checkbox" name="lang" value="English">
+        <label for="">English</label><br>
+        <input type="checkbox" name="lang" value="Hindi">
+        <label for="">Hindi</label><br><br>
         <label>email</label>
         <input type="email" placeholder="email" name=""><br><br>
         <label>Password</label>
@@ -27,5 +41,6 @@
         <input type="file" name="resume"><br><br>
         <input type="submit">
     </form>
+   </div>
 </body>
 </html>

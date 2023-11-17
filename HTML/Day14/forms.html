@@ -16,12 +16,21 @@
         <input type="text" name="LNAME">
         <br><br>
         <p>Gender</p>
-        <input type="radio" name="Gender" value="male">
-        <label for="">Male</label>
-        <input type="radio" name="Gender" value="female">
-        <label for="">Female</label>
+        <fieldset>
+            <legend>personal details</legend>
+            <input type="radio" name="Gender" value="male">
+            <label for="">Male</label>
+            <input type="radio" name="Gender" value="female">
+            <label for="">Female</label><br><br>
+            <label for="">Nationality:</label>
+            <select name="Nationality" id="">
+                <option value="Ind">India</option>
+                <option value="usa" selected>United states</option>
+                <option value="africa" disabled>Africa</option>
+            </select>
+        </fieldset>
         <p>Language:</p>
-        <input type="checkbox" name="lang" value="Telugu" id="l">
+        <input type="checkbox" name="lang" value="Telugu" id="l" checked>
         <label for="l">Telugu</label><br>
         <input type="checkbox" name="lang" value="English">
         <label for="">English</label><br>
@@ -39,6 +48,9 @@
         <input type="color"><br><br>
         <label>file</label>
         <input type="file" name="resume"><br><br>
+        <label for="">feedback:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br><br>
         <input type="submit">
     </form>
    </div>

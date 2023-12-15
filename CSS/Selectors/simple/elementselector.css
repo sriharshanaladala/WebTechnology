@@ -1,0 +1,20 @@
+*
+{
+        background-color: rgb(0, 255, 234);
+        font: bolder;
+}
+
+h1,h2{
+    color: rgb(255, 86, 80);
+    border: 2px solid rgb(225, 0, 255);
+    background-color: chartreuse;
+    text-overflow: ellipsis;
+}
+.ele{
+    color: rgb(255, 0, 0);
+}
+
+.fast,.hot{
+    font-display:initial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

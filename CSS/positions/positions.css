@@ -1,0 +1,45 @@
+
+nav,a{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    background-color: blueviolet;
+    width: 1400px;
+    
+}
+a{
+    text-decoration: none;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+._10c{
+    margin-left: 500px;
+    margin-top: 10px;
+}
+#heading{
+    text-align: center;
+    color: blue;
+}
+nav{
+    position: fixed;
+}
+#position{
+    position: absolute 100px;
+    border: 1px solid rgb(151, 26, 26);
+    height: 300px;
+    width: 200px;
+    background-image: url(https://cdn.pixabay.com/photo/2014/07/21/03/53/digital-art-398342_640.png);
+    background-size: 200px 300px;
+    position:relative 10px;
+}
+img{
+    width: 200px;
+    height:300px;
+}
+#position:hover{
+    background-image: url(https://cdn.pixabay.com/photo/2016/09/07/16/19/pile-1651945_640.jpg);
+    background-size: 200px 300px;
+}
+img:hover{
+  
+}

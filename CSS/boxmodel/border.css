@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(8, 69, 235);
+    
+}
+#p1{
+    border: 20px outset green;
+}
+#p2{
+    
+    border-width: 5px 10px 15px 20px;
+    border-top-style: dashed;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-right-style: double;
+    border-color: red green blue yellow;
+}
+#p1,#p2,#p3,#{
+    font-size: 30px;
+}
+#p3{
+    border: 5px solid blue;
+    border-radius: 40px;
+}
+ul,li{
+    border: 5px solid magenta;
+    width: 400px;
+}
+li{
+    border-color: orangered;
+    border-radius: 20px;
+}
+div{
+    border:10px solid orange;
+    border-style: groove;
+}
+

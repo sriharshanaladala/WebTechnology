@@ -1,0 +1,11 @@
+h1{
+    text-transform: capitalize;
+    background-color: coral;
+    border: 1px solid black;
+    text-align: center;
+}
+p{
+    background-image: url(https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

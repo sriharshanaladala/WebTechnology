@@ -8,7 +8,7 @@
         *{
             text-align: center;
         }
-        ul{
+        ul,.grid2{
             list-style-type: none;
             border: 3px solid red;
             padding-left: 0px;
@@ -21,24 +21,38 @@
             /* grid-template-rows: 1fr 1fr 1fr 1fr; */
             column-gap: 10px;
             row-gap: 20px;
+            background-color: black;
         }
-        li{
+        .grid2{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+
+        }
+        li,.a{
             background-color: aqua;
         }
-        .child1{
+        .child1, .griditem1{
             grid-column-start: 1;
             grid-column-end: 4;
         }
-        .lastchild{
+        .lastchild, .griditem6{
             grid-column-start: 1;
             grid-column-end: 4;
+        }
+        .griditem6{
+            grid-column-end: 5;
         }
         .child4{
             grid-column-start: 1;
             grid-column-end: 2;
             grid-row-start: 2;
             grid-row-end: 3;
-
+        }
+        .griditem2{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
         }
     </style>
 </head>
@@ -53,5 +67,13 @@
         <li>list7</li>
         <li class="lastchild">list8</li>
 </ul>
+<div class="grid2">
+    <div class="griditem1 a">HEADER</div>
+    <div class="griditem2 a"></div>
+    <div class="griditem3 a"></div>
+    <div class="griditem4 a"></div>
+    <div class="griditem5 a"></div>
+    <div class="griditem6 a">FOOTER</div>
+</div>
 </body>
 </html>

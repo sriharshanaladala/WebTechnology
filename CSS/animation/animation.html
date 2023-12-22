@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animate{
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(rgb(255, 230, 0),rgba(0, 255, 42, 0.384),rgb(128, 0, 75));
+            animation-name: sri_animate;
+            animation-duration: 2s;
+        }
+        @keyframes sri_animate{
+            from{
+                margin-left:1000px;
+                margin-top:0px;
+            }
+            to{
+                margin-left: 1000px;
+                margin-top: 500px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animate"></div>
+</body>
+</html>

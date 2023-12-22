@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        
+        .a,.b,.c,.d,.e,.f,.g,.h{
+            position: relative;
+            top: 100px;
+            border: 1px solid red;
+            color: rgb(0, 255, 64);
+            background-color: black;
+            width: 100px;
+            height: 100px;
+        }
+        .a:hover{
+            transform: scale(1.5,2);
+        }
+        .b:hover{
+            transform: rotate(45deg);
+        }
+        .c:hover{
+            transform: translate(20px, 40px);
+        }
+        .d:hover{
+            transform: skew(45deg);
+        }
+        .e:hover{
+            transform: scale(-2);
+        }
+        .f:hover{
+            transform: rotate(-45deg);
+        }
+        .g:hover{
+            transform: rotateX(60deg);
+        }
+        .h:hover{
+            transform: skewY(45deg);
+        }
+        .header{
+            border: 1px solid black;
+            width: 100%;
+            height: 50px;
+            border-radius:40px;
+            text-align: center;
+            padding-top: 10px;
+            background-image: linear-gradient(45deg,rgb(247, 40, 40),rgb(14, 240, 14),rgb(28, 28, 211));
+            color: rgb(255, 0, 0);
+            font-weight: bolder;
+            /* display: none; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">TRANSFORM PROPERTY</div>
+<div class="body">
+    <div class="a">hello
+        transform: scale(1.5,2)
+    </div>
+    <div class="b">hello
+        transform: rotate(45deg)
+    </div>
+    <div class="c">hello
+        transform: translate(20px, 40px)
+    </div>
+    <div class="d">hello
+        transform: skew(45deg)
+    </div>
+    <div class="e">hello
+        transform: scale(-2)
+    </div>
+    <div class="f">hello
+        transform: rotate(-45deg)
+    </div>
+    <div class="g">hello
+        transform: rotateX(60deg)
+    </div>
+    <div class="h">hello
+        transform: skewY(45deg)
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("<h1>SCRIPTS INSIDE EXTERNAL FILE</h1>")

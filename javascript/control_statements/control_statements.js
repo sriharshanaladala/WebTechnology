@@ -76,7 +76,7 @@ console.log("end")
 
 // ==================================================
 //prime numbers
-let p =100;
+let p =53;
 if (p<=1)
 {
     console.log(p+" is not prime");
@@ -129,7 +129,7 @@ else {
 
 // ==================================================
 // program to check the data type
-let num2="sri";
+let num2=10;
 if (typeof(num2)===typeof(1))
 {
     console.log(num2+" is a number type")
@@ -138,4 +138,7 @@ else if(typeof(num2)===typeof("string"))
 {
     console.log(num2+" is a string type")
 }
-else if()
+else if(typeof(num2)===typeof(true|| false))
+{
+    console.log(num2+" is a boolean type")
+}

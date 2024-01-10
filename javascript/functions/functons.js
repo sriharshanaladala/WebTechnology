@@ -21,4 +21,4 @@ print(true, false)
 let c= print(100, 625)
  print(100,c)
 
-function r7
+

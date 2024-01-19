@@ -23,15 +23,35 @@ demo()
 function demo(){
     console.log("helloworld");
 }
-
+// ______________________________________________________
 console.log(h)
 let num1= () => console.log("helloworld")
 var h = num1();
-
+// ______________________________________________________
 
 // num2()
 let num2 =function () {
     console.log("hellow world")
 }
 
+
+function add(a,b){
+    if(typeof a==="number"&& typeof b=== "number")
+    {
+        let sum = a+b;
+        console.log("the sum of "+a+" and "+b+" is "+sum )
+    }
+    else 
+    {
+        console.log("enter a number")
+    }
+}
+add(2,5)
+
+function sub(a,b){
+    if(typeof a==="number"&& typeof b==="number")
+    {
+        let diff = a-b
+    }
+}
 

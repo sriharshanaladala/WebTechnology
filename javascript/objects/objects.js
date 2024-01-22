@@ -41,3 +41,44 @@
  }
  let mobile1= new mobile("redmi", "8gb","40px", "120gb", "red" )
  console.log(mobile1);
+
+
+ let person = {
+    name: function(){
+        this.firstname = "Sri"
+        this.lastname ="harsha"
+        return(this.firstname+this.lastname)
+    },
+    sex: "male",
+    address : {
+        dorno:"3-17",
+        village : "davagudur",
+        mandal: "zarugumalli",
+        distric:"prakasam",
+        state:"andhrapradesh",
+        country:"india"
+    }
+
+ }
+ console.log(person.name());
+ console.log(person)
+console.log(person.firstname)
+console.log(person.address)
+
+
+function Test(a){
+      console.log("test function executed");
+      console.log(arguments[0]);
+      console.log(arguments[1]);
+      console.log(arguments[2]);
+      console.log(arguments[3]);
+      console.log(arguments[4]);
+
+   for(let i = 0; i<arguments.length; i++)
+   {
+      console.log(arguments[i])
+   }
+
+}
+
+Test(10,20,30,40,50)

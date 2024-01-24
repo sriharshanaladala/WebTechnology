@@ -220,3 +220,53 @@ let students =[
 //         }
 // }
 // write a promme to create array of objects 
+
+console.log("______________________________________________");
+
+//write a program to add two numbers
+console.log("write a program to add two numbers");
+
+let a = 10;
+let b=20;
+console.log((a+b)+" using '+' operator ");
+
+console.log("______________________________________________");
+let addition = (a,b) => console.log("sum of "+a+" & "+b +" is "+(a+b) +" using arrow function");
+addition(2,3)
+
+console.log("______________________________________________");
+function add(a,b){
+    return a+b
+}
+let x= add(3,5);
+console.log(x+" using function declaration and return statement")
+console.log("______________________________________________");
+
+//write a programe to multiply of two numbers
+console.log("write a programe to multiply of two numbers");
+//using operator
+a = 120;
+b=130;
+console.log("product of "+a+" & "+b+" is "+ (a*b) +" using '*' operator")
+
+console.log("______________________________________________");
+function product(a,b){
+    console.log("product of "+a+" & "+b+" is "+ (a*b) +" using function");
+}
+product(110,10)
+
+console.log("______________________________________________");
+
+//write a program to add float numbers
+console.log("write a program to add float numbers");
+function add_float(a,b){
+   let result= parseFloat(a)+parseFloat(b)
+   return result.toFixed(2) 
+}
+let z=add_float("2.678","3.567")
+console.log(z+" is the out put of sum of two floats using parsefloat and tofixed methods");
+
+console.log("______________________________________________");
+
+//write a program to check if a numbe is odd or even
+console.log("write a program to check if a numbe is odd or even");

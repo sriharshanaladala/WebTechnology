@@ -266,7 +266,76 @@ function add_float(a,b){
 let z=add_float("2.678","3.567")
 console.log(z+" is the out put of sum of two floats using parsefloat and tofixed methods");
 
-console.log("______________________________________________");
+console.log("_____________________________________________");
 
 //write a program to check if a numbe is odd or even
 console.log("write a program to check if a numbe is odd or even");
+let even_or_odd = a => {
+    if (a%2!=0){
+        return ( a+" is odd")
+    }
+    else if(a%2===0){
+        return( a+" is even")
+    }
+}
+let y=even_or_odd(6)
+console.log(y);
+console.log(typeof(even_or_odd));
+console.log("____________________________________________");
+
+//write a programe to check if a number is a positive or negitive
+
+console.log("write a programe to check if a number is a positive or negitive");
+function positive_or_negitive(a){
+    return(+(a>=0) ? a+" is positive" : a+ 'is negitive')
+}
+console.log(positive_or_negitive(0));
+
+console.log("____________________________________________");
+
+
+//wwap to print each charecters in given string 
+let str1 = "hi, how are you?"
+
+function charecters(str){
+    for(let i = 0; i<str.length; i++){
+       console.log(str[i]+" is present in "+i );
+    }
+}
+charecters(str1)
+console.log("____________________________________________");
+
+//wwap to count no of charecters in given string avoiding spaces
+
+function count_char(str){
+    count = 0
+    for (let i =0; i<str.length; i++)
+    {
+        if (str[i] != " ")
+            count++
+    }
+    console.log(count);
+    
+}
+count_char(str1)
+console.log("____________________________________________");
+
+//map  to  print unique charecters in given string
+function unique_char(str){
+    aray=[]
+    count=0
+    for(let i =0; i<str.length;i++){
+        if (str[i]!=str[i+1]){
+        aray.push(str[i])
+        count++ 
+        }
+        else {
+            aray =[]
+            count=0
+        }
+    }
+
+    console.log(aray);
+
+}
+unique_char(str1)

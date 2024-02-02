@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            /* align: center; */
+            /* border: 1px solid grey ; */
+            width:300px;
+            /* flex-wrap: wrap; */
+            position: relative;
+            left: 200px;
+            top: 100px;
+
+        }
+        input{
+            height: 35px;
+            border-radius: 10px;
+
+        }
+        button{
+            border-radius: 10px;
+            height: 30px;
+            background-color: blue;
+            color: beige;
+            width: 100px;
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input class="input1" type="text" placeholder="username" name="username">
+        <p id="para1"></p>
+        <br>
+        <input class="input2" type="text" placeholder="password" name="password">
+        <p id="para2"></p>
+        <br>
+        <button id="b1">login</button><br>
+        <button id="b2">register</button>
+    </form>
+    <script>
+        let form = document.getElementsByTagName("form")[0]
+        console.log(form);
+        form.addEventListener("click",(e)=>{
+            let inputs = document.getElementsByTagName("input")
+            let username = inputs[0].value
+            let password = inputs[1].value
+            if (username == ""){
+                e.preventDefault()
+                inputs[0].style.borderColor = "red"
+                let para1=  document.getElementById("para1")
+                para1.innerText="*this is a required feild"
+                para1.style.cssText ="color:red; position:relative; top:-20px;"
+            }
+            if(password==""){
+                e.preventDefault()
+                inputs[1].style.borderColor = "red"
+                let para1=  document.getElementById("para1")
+                para2.innerText="*this is a required feild"
+                para2.style.cssText ="color:red; position:relative; top:-20px;"
+            }
+        })
+
+        let login = document.getElementById("b1")
+        login.addEventListener("click",(e)=>{
+            let input1 = document.getElementById("input1").value
+            let input2 = document.getElementById("input2").value
+            let user = localStorage.getItem(username)
+            let pass = localStorage.getItem(password)
+            if(input1==username){
+                window.open()
+            }
+        })
+
+
+
+           let register = document.getElementById("b2")
+           register.addEventListener("click",(e)=>{
+                console.log(e.register);
+                window.open('./register.html',"target", 'height=600px,width=600px')
+           })
+    </script>
+</body>
+</html>

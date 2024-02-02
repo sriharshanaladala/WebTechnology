@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    let table = document.createElement("table")
+    console.log(table);
+    document.body.append(table)
+    let head = document.createElement("thead")
+    console.log(head);
+    table.append(head)
+    let body = document.createElement("tbody")
+    table.append(body)
+    let row1 = document.createElement("tr")
+    head.append(row1)
+    let heading = document.createElement("th")
+    row1.append(heading)
+    let heading2 = document.createElement("th")
+    row1.append(heading2)
+    let heading3 = document.createElement("th")
+    row1.append(heading3)
+    let row2 = document.createElement("tr")
+    body.append(row2)
+    let data1 = document.createElement("td")
+    row2.append(data1)
+    let data2 = document.createElement("td")
+    row2.append(data2)
+    let data3 = document.createElement("td")
+    row2.append(data3)
+    let row3 = document.createElement("tr")
+    body.append(row3)
+    let data4 = document.createElement("td")
+    row3.append(data4)
+    let data5 = document.createElement("td")
+    row3.append(data5)
+    let data6 = document.createElement("td")
+    row3.append(data6)
+
+    table.setAttribute("border","3px solid")
+    heading.innerText="table_heading1"
+    heading2.innerText="table_heading2"
+    heading3.innerText="table_heading3"
+    data1.innerText = "data_1"
+    data2.innerText = "data_2"
+    data3.innerText = "data_3"
+    data4.innerText = "data_4"
+    data5.innerText = "data_5"
+    data6.innerText = "data_6"
+
+
+
+
+
+
+</script>
+</body>
+</html>

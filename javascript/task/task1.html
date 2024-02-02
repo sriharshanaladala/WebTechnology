@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+    
+</head>
+<body>
+    <div style="border:1px solid rgb(12, 1, 51);text-align: center">
+        <button id="b1" onclick="hide()" style="border-radius: 20px;background-color: black;color: white;font-size: 20px; margin-top: 10px;">Hide</button>
+        <button id="b2" onclick="show()" style="border-radius: 20px;background-color: black;color: white;font-size: 20px; margin-top: 10px">Show</button>
+        <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nulla incidunt unde illo recusandae, odit tenetur neque accusamus possimus ratione officia dolorem id ullam mollitia nisi hic nemo ea earum.
+        Temporibus accusamus molestiae totam minima facilis ipsa earum illum quisquam in non dolores ab placeat hic at maiores, quibusdam obcaecati! Cumque architecto ducimus veritatis. Quis officia optio doloribus repellat natus.
+        Tenetur quaerat atque consequatur? Sapiente consequuntur veniam illo fuga esse tenetur natus eaque placeat, atque maiores. Nulla accusamus quos aliquam facilis distinctio. Officia facere quaerat vitae adipisci nihil cum qui.
+        Expedita tempore modi, perferendis, explicabo necessitatibus deleniti pariatur doloremque vitae incidunt, a similique? Iste molestiae reprehenderit accusamus reiciendis, nam, alias placeat temporibus dolores adipisci cum ea officiis rem! Optio, dicta?
+        Officiis aperiam temporibus perferendis culpa dignissimos. Amet assumenda ex recusandae atque quod nihil explicabo placeat consectetur vel ullam beatae excepturi maiores perspiciatis, ab eveniet enim. Eaque at aperiam sunt impedit!
+        Quaerat soluta nemo, atque voluptatem incidunt, eos temporibus corrupti aliquid dolorem, voluptates cupiditate impedit consequuntur commodi distinctio autem animi eaque natus ipsa nobis omnis sapiente. Ducimus sapiente porro suscipit mollitia.
+        Vel, eveniet. Assumenda quidem quo aliquid ex obcaecati. Consequuntur ducimus labore recusandae nobis voluptates autem repudiandae. Debitis iusto, ad soluta eum dolorem, culpa dolores perferendis illo ipsam, veritatis explicabo itaque.
+        Delectus rerum mollitia, suscipit beatae sed error corporis ab, molestias eos debitis iusto harum, cupiditate magni eum consequuntur tenetur eligendi? Voluptate adipisci beatae laborum maxime maiores ad totam impedit vitae.
+        Saepe itaque laudantium iure iusto porro </p>
+
+        
+
+        
+    </div>
+    <br>
+    <div style="border:1px solid rgb(12, 1, 51);text-align: center">
+        <button id="b3" onclick="display()" style="border-radius: 20px;background-color: black;color: white;font-size: 20px; margin-top: 10px">show</button>
+        <p id="para2" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores aspernatur eligendi maxime sint porro modi, qui reiciendis consectetur. Dolorem laudantium repudiandae quibusdam porro accusamus voluptate culpa eius. Ipsa, expedita recusandae?
+        Vero repudiandae quisquam dolor ullam. Iusto voluptates nisi esse exercitationem quasi rem tempora blanditiis, in veniam suscipit impedit error excepturi aut, tenetur deserunt debitis dolores quis, consequuntur quae eius porro.
+        Esse ea deserunt dolore eos nostrum, iure ullam cupiditate expedita, reprehenderit aspernatur laudantium praesentium assumenda magnam at maiores. Itaque earum reiciendis error autem temporibus consequatur cupiditate laudantium nostrum debitis nesciunt.
+        Illum quia aliquam porro temporibus quo ipsum quod libero repudiandae perferendis excepturi, voluptate officia quam eius animi rerum reprehenderit, voluptatibus, explicabo dolores velit pariatur. Error accusamus quis quod nostrum enim.
+        Deleniti ratione maxime quam hic earum veniam, enim pariatur debitis dignissimos quaerat sapiente fugit ipsum praesentium nulla quisquam eligendi, ea alias facere est eveniet nesciunt eos voluptates nobis at. Inventore.
+        Possimus at inventore itaque consequuntur deleniti hic consequatur vero voluptatem neque dicta voluptatibus dolores ducimus nemo, ea eligendi quibusdam mollitia. Laborum, voluptate ducimus. Sint debitis nam voluptates, dolores recusandae iusto.
+        Labore libero exercitationem aliquid possimus consectetur sit ut officiis ipsam minima, dignissimos fuga totam a illum quidem reiciendis itaque! Debitis ipsam expedita, officiis odio non voluptas atque! Quaerat, veritatis repellendus!
+        Fugiat tenetur inventore dolore, quidem eaque ullam similique voluptatum deleniti cupiditate iure dignissimos, fugit veniam. Facere, culpa sit praesentium aliquid eveniet magni cumque iusto voluptatem molestiae perferendis facilis obcaecati tempora?
+        Reiciendis sed, omnis explicabo, distinctio voluptatum quia laboriosam non deleniti beatae laborum ullam, praesentium cumque? Maxime enim velit at excepturi quasi est laboriosam ratione corrupti esse, optio eligendi vel dolores.
+        Laboriosam voluptatibus unde consectetur et expedita optio maxime aperiam harum asperiores quas ab reiciendis magnam quod perspiciatis suscipit, ut, similique accusantium itaque repellendus. Aspernatur, ea perspiciatis labore officiis cumque maxime!</p>
+    </div>
+<hr>
+<br><br><br>
+    <!-- <div>
+        <form action="">
+        <input id="name" type="text" placeholder="username" name="username" value="">
+         <label for="">username</label> -->
+        <!-- <br><br>
+        <input id="password" type="password" placeholder="password" name="password" >
+        
+        <br>
+        <input type="submit">
+        </form>
+    </div> -->
+    <div>
+        <input type="text" placeholder="enter todo">
+        <button id="b4">Add</button>
+        <ul></ul>
+    </div>
+    <br><br><br><br><br>
+    <script>
+        // function hide(){
+        //     let b = document.getElementById("para1")
+        //     b.style.cssText="visibility:hidden"
+        // }
+        // function show(){
+        //     let b = document.getElementById("para1")
+        //     b.style.cssText="display:block"
+        // }
+        // let b = document.getElementById("para2")
+        
+        // b.style.cssText="visibility:hidden"
+        // let c=document.getElementById("b3")
+        // // C.innerText="show"
+        
+        // function display(){
+        //     if (c.innerText=="show"){
+        //         b.style.cssText="visibility:visible"
+        //         c.innerText="hide"
+        //     }
+        //     else{
+        //         b.style.cssText="visibility:hidden"
+        //         c.innerText="show"
+        //     }
+        // }
+        // function login(event){
+            
+        //     let x =document.querySelector('#name')
+        //     let y = document.querySelector('#password')
+        //     // z.append(x.value)
+        //     console.log("{"+x.value+":"+ y.value+"}");
+
+        // }
+        // let form = document.getElementsByTagName("form")
+        // console.log(form);
+        // form[0].addEventListener("submit",(e)=>{
+        //     e.preventDefault()
+        //     let inputs = document.getElementsByTagName("input")
+        //     console.log(inputs);
+        //     console.log(inputs[0].value);
+        //     console.log(input[1].value);
+        // })
+            let btn = document.getElementById("b4")
+            btn.addEventListener("click",()=>{
+                let inputVal =document.getElementsByTagName("input")[0].value
+                let li=document.createElement("li")
+                li.innerText= inputVal
+                let ul = document.getElementsByTagName("ul")[0]
+                ul.append(li)
+                document.getElementsByTagName("input")[0].value=" "
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            height:200px;
+            width:200px;
+            border: 1px solid red;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        #div2{
+            height:150px;
+            width:150px;
+            border: 1px solid rgb(153, 0, 255);
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <button>click</button>
+        </div>
+    </div>
+    <script>
+        let div1 = document.getElementById("div1")
+        let div2 =document.getElementById("div2")
+        let btn = document.getElementsByTagName("button")[0]
+
+        div1.addEventListener("click",(e)=>{
+            e.stopPropagation()
+            console.log("div1 is called");
+        })
+
+
+        div2.addEventListener("click",(e)=>{
+            e.stopPropagation()
+            console.log("div2 is called");
+        })
+
+
+        btn.addEventListener("click",(e)=>{
+            e.stopPropagation()
+
+            console.log("div3 is called");
+        })
+</script>
+</body>
+</html>

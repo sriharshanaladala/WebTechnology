@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1>CSS</h1>
+    <BUTTON onclick="demo()">change content</BUTTON>
+    <button onclick="fun1()" >add css</button>
+    <hr>
+    <img id="img1" onmouseover="newimg()" onmouseout="oldimg()" src="" alt="">
+    <p id="para1" onmousedown="fun2()" onmouseup="fun3()">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eveniet eius officia voluptates, in vero ipsa hic. Ipsum, soluta commodi accusantium nemo quaerat fugiat, architecto dolorum nisi corrupti enim facere.</p>
+
+    <hr>
+
+    <input type="text" onkeydown="fun4()" placeholder="key_down"> <br><br>
+    <input type="text" onkeyup="fun5()" placeholder="key up"> <hr>
+
+    <button onclick="fun6()" on>click</button>
+
+    <button onclick="logout()" >logout</button>
+    <button></button>
+
+
+
+    <script>
+        let h1 = document.querySelector("h1")
+        function demo(){
+            if (h1.innerText=="CSS")
+            {
+                h1.innerText="JAVASCRIPT"
+            }
+            else{
+                h1.innerText="CSS"
+            }
+        }
+
+        function fun1(){
+        }
+
+        function fun2(){
+            let p = document.getElementById("para1")
+            p.style.cssText="background-color:black; color:"
+        }
+        function logout(){
+            let bool = confirm("Are u sure u want to logout?")
+            if (bool)
+            {
+                window.close()
+            }
+            else{
+                alert("continue ......!")
+            }
+        }
+    </script>
+
+    </body
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid red">
+        <tr>
+            <th>green</th>
+            <th>yellow</th>
+            <th>purple</th>
+        </tr>
+    </table>
+    <script>
+        // let th = document.getElementsByTagName("th")
+        // th[0].addEventListener("click",()=>{
+        //     th[0].style.backgroundColor = "green"
+        // })
+
+        // th[1].addEventListener("click",()=>{
+        //     th[1].style.backgroundColor = "yellow"
+        // })
+        
+        // th[2].addEventListener("click",()=>{
+        //     th[2].style.backgroundColor = "purple"
+        // })
+        
+            let tr = document.getElementsByTagName("tr")[0]
+            tr.addEventListener("click",(e)=>{
+                console.log(e.target);
+                if(event.target){
+                    event.target.style.backgroundColor = "green"
+                }
+            })
+    </script>
+</body>
+</html>

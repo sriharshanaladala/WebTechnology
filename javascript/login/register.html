@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+            form{
+            display: flex;
+            flex-direction: column;
+            /* align: center; */
+            /* border: 1px solid grey ; */
+            width:300px;
+            /* flex-wrap: wrap; */
+            position: relative;
+            left: 200px;
+            top: 100px;
+
+        }
+        input{
+            height: 35px;
+            border-radius: 10px;
+
+        }
+        button{
+            border-radius: 10px;
+            height: 30px;
+            background-color: blue;
+            color: beige;
+            width: 100px;
+            position: relative;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input id="i1" type="text" placeholder="username" name="username"><br>
+    <input id="i2" type="text" placeholder="password" name="password"><br>
+    <button id="b3">register</button>
+    </form>
+</body>
+
+<script>
+    console.log(window);
+let btn = document.getElementById("b3")
+console.log(btn)
+btn.addEventListener("click",(e)=>{
+    let input1 = document.getElementById("i1").value
+    let input2 = document.getElementById("i2").value
+
+    let username = localStorage.setItem("username", input1)
+    let password = localStorage.setItem("password",input2)
+    console.log(username);
+    console.log(password);
+   
+})
+
+window.close()
+
+</script>
+</html>

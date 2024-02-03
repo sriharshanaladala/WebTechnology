@@ -67,24 +67,33 @@
             }
         })
 
-        let login = document.getElementById("b1")
-        login.addEventListener("click",(e)=>{
-            let input1 = document.getElementById("input1").value
-            let input2 = document.getElementById("input2").value
-            let user = localStorage.getItem(username)
-            let pass = localStorage.getItem(password)
-            if(input1==username){
-                window.open()
+       let forms = document.getElementsByTagName("form")
+       console.log(forms);
+       forms[0].addEventListener("submit",(e)=>{
+        let inputs = document.getElementsByTagName("input")
+        let localuser = inputs[0].value
+        let localpass = inputs[1].value
+        let user = localStorage.getItem("username")
+        let pass = localStorage.getItem("password")
+        if(user==localuser){
+            if(pass == localpass){
+                alert("login successfull")
+                window.open("./user.html","target")
             }
-        })
+        }
 
 
 
+
+       })
+
+   
            let register = document.getElementById("b2")
            register.addEventListener("click",(e)=>{
                 console.log(e.register);
                 window.open('./register.html',"target", 'height=600px,width=600px')
            })
+
     </script>
 </body>
 </html>

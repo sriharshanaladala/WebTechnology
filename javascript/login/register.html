@@ -46,17 +46,22 @@
 let btn = document.getElementById("b3")
 console.log(btn)
 btn.addEventListener("click",(e)=>{
+    
+   
     let input1 = document.getElementById("i1").value
     let input2 = document.getElementById("i2").value
 
     let username = localStorage.setItem("username", input1)
     let password = localStorage.setItem("password",input2)
+    alert("register succesfull")
+    
     console.log(username);
     console.log(password);
+    window.close()
    
 })
 
-window.close()
+
 
 </script>
 </html>

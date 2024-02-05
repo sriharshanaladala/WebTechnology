@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn" onclick="genarate_otp()" >otp genarator</button>
+    <script>
+        // console.log(window.Math);
+        console.log(Math.max(2,5,7,4,8));
+        console.log(Math.min(2,3,4,5,6));
+        console.log(Math.round(4.3));
+        console.log(Math.round(4.5));
+        console.log(Math.floor(4.3));
+        console.log(Math.ceil(4.5));
+        console.log(Math.trunc(4.5));
+        console.log(Math.pow(2,3));
+        console.log(Math.random());
+        console.log(Math.floor(Math.random()*10000));
+        console.log(Math.floor(Math.random()*10000));
+        let btn1 = document.getElementById("btn")
+        
+
+        function genarate_otp(){
+            let num = (Math.random()*10000)
+            let otp = Math.floor
+            if(otp>990 & otp<10000)
+            {
+                console.log(otp);
+            }
+            else{
+                genarate_otp()
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>

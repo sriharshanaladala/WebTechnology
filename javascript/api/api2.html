@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border=5px>
+        <thead>
+            <tr>
+                <td>sno</td>
+                <td>state</td>
+                <td>active</td>
+                <td>confirmed</td>
+                <td>deaths</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        let x = fetch("https://data.covid19india.org/data.json")
+        console.log(x);
+        
+        x.then((response)=>{
+            console.log(response);
+            return response.json()
+        }).then((data)=>{
+            console.log(data);
+            console.log(data.statewise);
+            let covid_data = document.getElementsByTagName("tbody")[0]
+            console.log(covid_data);
+            for(let i=1;i<data.statewise.length;i++){
+                covid_data.innerHTML +=` 
+                <tr>
+                    <td>${i}</td>
+                    <td>${data.statewise[i].state}</td>
+                    <td>${data.statewise[i].active}></td>
+                    <td>${data.statewise[i].confirmed}</td>
+                    <td>${data.statewise[i].deaths}</td>
+
+                </tr>
+                `
+            }
+        })
+    </script>
+</body>
+</html>

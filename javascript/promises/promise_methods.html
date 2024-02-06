@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //promise methos
+        //!promise.all(): it will check all the promises are fullfilled or not.
+
+        //if all the promises are full filled then it wwill 
+        let p1 = new Promise((res,rej)=>{
+            setTimeout(()=>{
+                res("promise 1 full filled")
+            },3000)
+        })
+        let p2 = new Promise((res,rej)=>
+        {
+            if (false){
+                res("promise 2 fullfilled")
+            }
+            else{
+                rej("promise 2 rejected")
+            }
+        })
+        let p3 = new Promise((res,rej)=>{
+            if(false)
+        })
+    </script>
+</body>
+</html>

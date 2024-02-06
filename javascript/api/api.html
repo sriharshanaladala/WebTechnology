@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="3px">
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>login</td>
+                <td>avatar_url</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script>
+        let x = fetch("https://api.github.com/users")
+        console.log(x);
+
+        x.then((response)=>{
+            console.log(response);
+            return response.json()
+        }).then((data)=>{
+            console.log(data);
+            console.log(data[0]);
+            console.log(data[1]);
+            let apidata = document.getElementsByTagName("tbody")[0]
+        for(let i=0; i<data.length;i++){
+            apidata.innerHTML +=
+            `<tr>
+                <td>${data[i].id}</td>
+                <td>${data[i].login}</td>    
+                <td><img src=${data[i].avatar_url} height=200px width=200px></td>    
+            </tr>`
+        }
+        })
+        
+
+    </script>
+</body>
+</html>

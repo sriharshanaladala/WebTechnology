@@ -20,7 +20,7 @@
         })
         console.log(x);
         x.then((a)=>{
-            console.log(a);
+            console.log(a);0
             return(bool);
         }).then((a)=>{
             console.log(bool);
@@ -29,6 +29,43 @@
         }).finally((a)=>{
             console.log("thank you......");
         })
+
+
+        //call back hell
+        function add(a,b, callback){
+            callback(a+b)
+        }
+        add(10,20,(a)=>{
+            console.log(a);
+            add(30,a,(b)=>{
+                console.log(b);
+                add(40,b,(c)=>{
+                    console.log(b);
+                    add(50,b,(d)=>{
+                        console.log(d);
+                    })
+                })
+            })
+        })
+        
+
+    //using promises
+    function add(a,b){
+        return new Promise((res)=>{
+            res(a+b)
+        })
+    }
+    let z = add(10,20)
+    console.log(z);
+    x.then((a)=>{
+        console.log(a);
+        return add(30 ,a)
+    })
+    x.then((b)=>{
+        console.log(b);
+        // return add(40,b)
+    })
+
     </script>
 </body>
 </html>

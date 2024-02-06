@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border=3px>
+
+    </table>
+    <script>
+        let x =fetch("https://dog.ceo/api/breeds/image/random")
+        console.log(x);
+
+        x.then((response)=>{
+            console.log(response);
+            return response.json()
+        }).then((data)=>{
+            console.log(data);
+        })
+        let dog_data = document.getElementsByTagName("tbody")[0]
+    </script>
+</body>
+</html>

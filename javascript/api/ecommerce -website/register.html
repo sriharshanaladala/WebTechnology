@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+       form{
+            display: flex;
+            flex-direction: column;
+            /* align: center; */
+            /* border: 1px solid grey ; */
+            width:300px;
+            /* flex-wrap: wrap; */
+            position: relative;
+            left: 500px;
+            top: 100px;
+
+        }
+        input{
+            height: 35px;
+            border-radius: 10px;
+
+        }
+        button{
+            border-radius: 10px;
+            height: 30px;
+            background-color: blue;
+            color: beige;
+            width: 100px;
+            position: relative;
+            left: 100px;
+            
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        footer{
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Choice</h1>
+        <nav>
+            <ul>
+                <!-- <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li> -->
+                <!-- Add a link to the login page -->
+                <li class="login"><a href="login.html" >Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="">
+        <input id="i1" type="text" placeholder="username" name="username"><br>
+    <input id="i2" type="text" placeholder="password" name="password"><br>
+    <button id="b3">register</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 My E-commerce Website</p>
+    </footer>
+</body>
+
+<script>
+    console.log(window);
+let btn = document.getElementById("b3")
+console.log(btn)
+btn.addEventListener("click",(e)=>{
+    
+    e.preventDefault();
+    let input1 = document.getElementById("i1").value
+    let input2 = document.getElementById("i2").value
+
+    let username = localStorage.setItem("username", input1)
+    let password = localStorage.setItem("password",input2)
+    alert("register succesfull")
+    
+    console.log(username);
+    console.log(password);
+    window.open("./login.html", "target");
+   
+})
+
+
+
+</script>
+</html>

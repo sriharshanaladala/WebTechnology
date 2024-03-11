@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            /* align: center; */
+            /* border: 1px solid grey ; */
+            width:300px;
+            /* flex-wrap: wrap; */
+            position: relative;
+            left: 500px;
+            top: 100px;
+
+        }
+        input{
+            height: 35px;
+            border-radius: 10px;
+
+        }
+        button{
+            border-radius: 10px;
+            height: 30px;
+            background-color: blue;
+            color: beige;
+            width: 100px;
+            position: relative;
+            left: 100px;
+            
+        }
+        button a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        footer{
+            position: relative;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Choice</h1>
+        <nav>
+            <ul>
+                <!-- Add a link to the login page -->
+                <!-- <li class="login"><a id="bt" href="login.html" >Login</a></li> -->
+                <li class="login"><a id="bt" href="register.html" >Sign up</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main id="products">
+        <!-- Product cards and categories will be dynamically generated here -->
+    </main>
+
+    <div id="cart-container">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <!-- Cart items and total price will be displayed here -->
+    </div>
+
+    
+    <form action="">
+        <input class="input1" type="text" placeholder="username" name="username">
+        <p id="para1"></p>
+        <br>
+        <input class="input2" type="text" placeholder="password" name="password">
+        <p id="para2"></p>
+        <br>
+        <button id="b1"><a href="./index.html">login</a></button><br>
+        <button id="b2">register</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 My E-commerce Website</p>
+    </footer>
+    <script>
+        let form = document.getElementsByTagName("form")[0]
+        console.log(form);
+        form.addEventListener("click",(e)=>{
+            let inputs = document.getElementsByTagName("input")
+            let username = inputs[0].value
+            let password = inputs[1].value
+            if (username === ""){
+                e.preventDefault()
+                inputs[0].style.borderColor = "red"
+                let para1=  document.getElementById("para1")
+                para1.innerText="*this is a required feild"
+                para1.style.cssText ="color:red; position:relative; top:-20px;"
+            }
+            if(password===""){
+                e.preventDefault()
+                inputs[1].style.borderColor = "red"
+                let para2=  document.getElementById("para2")
+                para2.innerText="*this is a required feild"
+                para2.style.cssText ="color:red; position:relative; top:-20px;"
+            }
+        })
+        
+       let forms = document.getElementsByTagName("form")
+       console.log(forms);
+       forms[0].addEventListener("submit",(e)=>{
+        let inputs = document.getElementsByTagName("input")
+        let logout = document.getElementById("bt")
+        let localuser = inputs[0].value
+        let localpass = inputs[1].value
+        let user = localStorage.getItem("username")
+        let pass = localStorage.getItem("password")
+        if(user===localuser&&pass===localpass){
+                window.open("./index.html","target")
+                logout.innerText="logout"
+            }
+        else{
+            para1.innerText="verify email or password is correct or not"
+            }
+
+
+            
+
+
+       })
+
+   
+           let register = document.getElementById("b2")
+           register.addEventListener("click",(e)=>{
+                console.log(e.register);
+                window.open('./register.html',"blank", 'height=600px,width=600px')
+           })
+
+    </script>
+</body>
+</html>

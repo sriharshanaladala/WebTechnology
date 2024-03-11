@@ -21,7 +21,7 @@
 
 
     <script>
-        let x = fetch("https://api.github.com/users")
+        let x = fetch("https://fakestoreapi.com/products")
         console.log(x);
 
         x.then((response)=>{
@@ -36,13 +36,17 @@
             apidata.innerHTML +=
             `<tr>
                 <td>${data[i].id}</td>
-                <td>${data[i].login}</td>    
-                <td><img src=${data[i].avatar_url} height=200px width=200px></td>    
+                <td>${data[i].title}</td>    
+                <td>${data[i].discription}</td>    
+                <td>${data[i].category}</td>
+                <td>${data[i].price}</td>        
+                <td><img src=${data[i].image} height=200px width=200px></td>
+                    
             </tr>`
         }
         })
         
-
+// 
     </script>
 </body>
 </html>

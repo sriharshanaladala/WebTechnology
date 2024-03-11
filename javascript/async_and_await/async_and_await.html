@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function add(a,b)
+        // {
+        //     return new Promise((resolve) => {
+        //         resolve(a+b)
+        //     })
+        // }
+        // let x = add(10,20)
+        // console.log(x);
+
+        // x.then((a)=>{
+        //     console.log(x);
+        //     return add(a,30)
+        // })
+        // .then((a)=>{
+        //     console.log(a);
+        //     return add(a,40)
+        // })
+        // .then((a)=>{
+        //     console.log(a);
+        //     return add(a,50)
+        // })
+        // // async function ()({
+
+        // // })()
+
+        let p1 = new Promise((resolve, reject) => {
+            
+                resolve(30)
+            
+        })
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve("promise 2 is full filled")
+            },5000)   
+        })
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                resolve("promise 3 is full filled")
+            },3000)   
+        })
+
+        // console.log(p1);
+        // console.log(p2);
+        // console.log(p3);
+
+        // //Promise.all
+        // let x = Promise.all([p1,p2,p3])
+        // console.log(x);
+        // x.then((arr)=>{
+        //     console.log(arr);
+        // })
+
+        // //Promise.allSettled()
+        // let y = Promise.allSettled([p1,p2,p3])
+        // console.log(y);
+        // y.then((arr1)=>{
+        //     console.log(arr1);
+        // })
+        // promise.any()
+        // let z = Promise.any([p2,p3])
+        // console.log(z);
+        //promise.race
+        let m = Promise.race([p2,p3])
+        console.log(m);
+    </script>
+</body>
+</html>
